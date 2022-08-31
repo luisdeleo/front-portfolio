@@ -1,0 +1,19 @@
+<section class="container-fliud background-grey">
+    <div><a name="seccion 4" id="Educacion"></a>
+        <h1>Educación</h1>
+    </div>
+    <div *ngFor="let edu of educ">
+   <div class="containter py-4" >
+        <div class="row justify-content-center">
+            <div class="col-lg-4">
+                <div class="card shadow card-height mb-3">
+                    <div class="card-body mb-3 tajeta" >
+                        <h5 class="card-title text-center fs-3">{{edu.titulo}}</h5>
+                        <p class="card-text text-center fs-5">{{edu.descripcion}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>

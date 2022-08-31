@@ -1,0 +1,64 @@
+<header class="container-fluid primer">
+    <div class="row justify-content-start">
+        <div class="col-lg-12">
+            <div><a [routerLink]="['']">
+                    <h2 class="display-4 text" style="color: #acb3bd;">
+                        <br>{{miPorfolio?.name}}
+                        <img class="float-end aws1" src="./assets/images/image.png" alt="aws">
+                    </h2>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+    <div class="container-fluid">
+        <a class="navbar-brand"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link text-light" [routerLink]="['/Inicio/Presentacion']"><i
+                            class="fa-solid fa-house"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" [routerLink]="['/Inicio/Experiencia']">Experiencia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" [routerLink]="['/Inicio/Trabajos']">Trabajos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" [routerLink]="['/Inicio/Educacion']">Educación</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" [routerLink]="['/Inicio/Contacto']">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<router-outlet></router-outlet>
+
+
+<!--<header>
+    <div class="contenedor">
+        <img class="img-fluid w-100 image" src="https://wallpaperboat.com/wp-content/uploads/2019/10/coding-07.jpg"
+            alt="Portada" />
+        <div class="container-lg texto">
+            <div class="row justify-content-start">
+                <div class="col-6">
+                    <h1>Bienvenido a mi Porfolio</h1>
+                    <h1 class="display-1"> Mi nombre es {{miPorfolio?.name}}</h1>
+                </div>
+                <div>
+                <img class="img-fluid" src="./assets/images/image.png" alt="aws">
+                </div>
+            </div>
+        </div>
+    </div>
+</header>-->

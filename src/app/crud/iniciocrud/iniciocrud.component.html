@@ -1,0 +1,16 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-m-12 gap-2 d-md-flex justify-content-md-end" style="margin-top: 10px;">
+            <button (click)="atras()" class="btn btn-primary">Volver</button>
+            <button [routerLink]="['/Inicio/Contacto']" class="btn btn-primary" style="margin-left: 10px;">Home</button>
+            <button (click)="logout()" class="btn btn-danger" style="margin-left: 10px;">Logout</button>
+        </div>
+        <h1>Sistema Gestor de CRUD</h1>
+        
+            <h4>Seleccione una Seccion</h4>
+            <div class="col-md-5">
+            <button [routerLink]="['/Expe']" class="btn btn-primary">Experiencia</button>
+            <button [routerLink]="['/Edu']" class="btn btn-primary" style="margin: 10px;">Educacion</button>
+        </div>
+    </div>
+</div>

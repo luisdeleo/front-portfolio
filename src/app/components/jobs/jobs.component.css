@@ -1,0 +1,47 @@
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.61);
+    transition: 0.3s;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.61);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+  
+ .carousel{
+  transition: .2;
+ }
+
+ .carousel-control-prev, .carousel-control-next {
+  background-color: #aaaaaa;
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-top: 50%;
+}
+
+.carousel-indicators{
+  background-color: #aaaaaa;
+  display: block;
+  margin: 0%;
+  padding: 0%;
+}
+
+@media (max-width: 575px){
+  h1{
+    text-align: left;
+  }
+}
+
+@media (max-width: 720px){
+  h1{
+    text-align: left;
+  }
+}

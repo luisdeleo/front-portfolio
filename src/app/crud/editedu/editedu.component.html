@@ -1,0 +1,37 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-m-12 gap-2 d-md-flex justify-content-md-end" style="margin-top: 10px; margin-bottom: 10px;">
+            <button (click)="atras()" class="btn btn-primary">Volver</button>
+            <button [routerLink]="['/Inicio/Contacto']" class="btn btn-primary" style="margin-left: 10px;">Home</button>
+            <button (click)="logout()" class="btn btn-danger" style="margin-left: 10px;">Logout</button>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-8">
+        <form style="margin: 5rem;">
+            <div class="card shadow">
+                <h1>Editar Educación</h1>
+                <div class="card-body">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="">id</label>
+                            <input [(ngModel)]="educ.id" name="id" type="text" class="form-control" placeholder="id">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="">Titulo</label>
+                            <input [(ngModel)]="educ.titulo" name="titulo" type="text" class="form-control" placeholder="titulo">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Descripcion</label>
+                        <textarea [(ngModel)]="educ.descripcion" name="descripcion" class="form-control" rows="5" type="text"
+                            placeholder="Descripcion"></textarea>
+                    </div>
+                    <button (click)="Actualizar(educ)" style="margin: 5px;" type="submit" class="btn btn-primary">Guardar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

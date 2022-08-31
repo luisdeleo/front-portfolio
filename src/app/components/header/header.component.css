@@ -1,0 +1,21 @@
+.primer{
+    background-image: url('/assets/images/44.jpg');
+}
+
+.text{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.aws1{
+    margin-right: 8rem;
+}
+
+@media (max-width: 975px){
+    .aws1{
+        width: 40%;
+    }
+}

@@ -1,0 +1,57 @@
+<section class="container-fluid">
+    <div><a name="seccion 1" id="Presentacion"></a>
+        <h1>Presentación</h1>
+    </div>
+    <div class="container py-4">
+        <div class="row align-items-center py-3">
+            <div class="col-sm-4">
+                <img src="./assets/images/foto.jpg" alt="Perfil" class="img-fluid imagen">
+            </div>
+            <div class="col-sm-8 mt-3" align="center">
+                <p class="fs-4 ">Mi nombre es {{miPorfolio?.name}}, tengo 30 años, soy de la ciudad de Morón,
+                    Buenos Aires.
+                    Soy egresado de bachiller con orientación en {{miPorfolio?.education.career}}
+                    (2017).
+                    Poseo la certificación “{{miPorfolio?.education.courses.name}}” de
+                    {{miPorfolio?.education.courses.enterprise}},
+                    soy egresado del curso
+                    de programación “{{miPorfolio?.education.courses3.name}} Se Programar" (finalizando la etapa 2 "Yo
+                    Programo")
+                    impartido por el Ministerio de
+                    Desarrollo de la Nación y participo de la capacitación en {{miPorfolio?.education.courses2.career}}
+                    con la prestigiosa empresa {{miPorfolio?.education.courses2.enterprise}}, a traves de su linea
+                    {{miPorfolio?.education.courses2.name}}".</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container-fluid texto-abajo background-grey" align="center">
+    <h1>Habilidades</h1>
+    <div class="container fs-4">
+        <p>Me considero una persona versátil, empática, objetiva y detallista. <br>
+            Puedo adaptarme a cualquier entorno, tarea y situación. No tengo dificultades
+            a la hora de tomar decisiones, pero si me gusta estar seguro de que lo que voy a hacer tendrá el efecto
+            deseado,
+            para esto investigo, analizo y consulto con algún experto. <br>
+            Poseo mucha imaginación, la misma me lleva a lugares inesperados, nunca me quedo con mi primer "diseño", me
+            gusta repasarlo y
+            repensarlo hasta que quede de la mejor manera posible.</p>
+    </div>
+</section>
+
+<section class="container-fluid texto-abajo" align="center">
+    <h1>Puntos Fuertes</h1>
+    <div class="container fs-4">
+        <p>Si tuviera que elegir mi punto fuerte en la programación sería el Front-end. Soy apasionado por el diseño
+            final,
+            ver el impacto que tienen mis ideas y poder ver los cambios que genero. <br>
+            Aprendí de forma autodidacta el uso de programas como Photoshop CS6 y Publisher, lo que me llevo a
+            trabajar al dia de hoy como diseñador y community manager. No podria autodefinirme como diseñador gráfico y
+            tengo mucho
+            por aprender, pero me apasiona lo que hago. <br>
+            Asi mismo también me encanta el Back-end, pero sé que aún me falta mucho para poder dominarlo. <br>
+            <a [routerLink]="['/Inicio/Trabajos']">AQUI</a> podra ver algunos de mis trabajos de diseño
+        </p>
+    </div>
+</section>

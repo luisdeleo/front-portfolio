@@ -1,0 +1,5 @@
+@media (max-width: 975px){
+    #boton{
+        flex-direction: column;
+    }
+}
